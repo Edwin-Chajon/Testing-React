@@ -22,7 +22,7 @@ export default function StarWarsCharacters() {
     };
     getCharacters();
   }, [url]);
-  
+
 
   const goToNext = e => {
     e.preventDefault();
@@ -47,7 +47,9 @@ export default function StarWarsCharacters() {
       ) : (
         <>
           {characters.map(character => (
-            <div key={character.url}>{character.name}</div>
+            <div 
+            id="name"
+            key={character.url}>{character.name}</div>
           ))}
         </>
       )}
