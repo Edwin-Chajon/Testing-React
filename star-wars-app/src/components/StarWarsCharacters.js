@@ -22,6 +22,7 @@ export default function StarWarsCharacters() {
     };
     getCharacters();
   }, [url]);
+  
 
   const goToNext = e => {
     e.preventDefault();
